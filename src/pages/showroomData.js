@@ -1,0 +1,740 @@
+// ─────────────────────────────────────────────────────────────────
+//  MANICKBAG AUTOMOBILES — ALL OUTLETS DATA
+//  Route pattern:  /showrooms/:outletKey
+//  e.g.  /showrooms/belgaum-3s
+//        /showrooms/belgaum-emo-chikkodi
+//        /showrooms/hubli-3s
+// ─────────────────────────────────────────────────────────────────
+
+export const OUTLETS = {
+
+  // ══════════════════════════════════════════════
+  //  BELGAUM  (6 outlets)
+  // ══════════════════════════════════════════════
+
+  "belgaum-3s": {
+    city: "Belgaum",
+    outletName: "3'S Belgaum",
+    type: "3S",           // 3S = Sales + Service + Spares
+    tagline: "North Karnataka's Gateway 3S Showroom",
+    address: "Survey No. 14, Khanapur Road, Tilakwadi, Belagavi – 590 006",
+    phone: "+91 83122 45678",
+    whatsapp: "918312245678",
+    email: "belgaum@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 7:00 PM  |  Sun: 10:00 AM – 5:00 PM",
+    mapLink: "https://maps.google.com/?q=Khanapur+Road+Tilakwadi+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+    heroSlides: [
+      {
+        tag: "Belgaum 3S Showroom",
+        headline: "Belgaum's Most\nTrusted Tata Dealer",
+        sub: "Full Sales, Service & Spares experience at our flagship Belagavi outlet on Khanapur Road.",
+        cta: "Explore Models",
+      },
+      {
+        tag: "New EV Arrivals",
+        headline: "Drive Electric\nin North Karnataka",
+        sub: "Test drive the Nexon EV, Punch EV & Tiago EV at our Belgaum showroom today.",
+        cta: "View EV Range",
+      },
+      {
+        tag: "Hassle-Free Finance",
+        headline: "Own Your Dream\nTata Today",
+        sub: "Lowest EMI plans, instant approval, and zero-interest schemes available this month.",
+        cta: "Check Finance Offers",
+      },
+    ],
+    stats: [{ v: "2,800+", l: "Vehicles Sold" }, { v: "15+", l: "Years" }, { v: "4.8★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#1a3d7c 55%,#0a2240 100%)",
+    accentColor: "#4fc3f7",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "Factory-trained technicians with genuine Tata parts." },
+      { icon: "💳", title: "Finance & Insurance", desc: "Tailored EMI plans with leading banks & NBFCs." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Coverage plans up to 5 years for peace of mind." },
+      { icon: "🔄", title: "Exchange Programme", desc: "Fair valuations and instant processing." },
+      { icon: "📱", title: "Digital Booking", desc: "Book test drives & service from your phone." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Home pickup & drop across Belgaum district." },
+    ],
+    team: [
+      { name: "Rajesh Patil",  role: "Showroom Manager",   ext: "101" },
+      { name: "Smita Desai",   role: "Sales Executive",     ext: "102" },
+      { name: "Anil Kore",     role: "Service Advisor",     ext: "201" },
+      { name: "Priya Shettar", role: "Finance & Insurance", ext: "301" },
+    ],
+    siblings: ["belgaum-emo-chikkodi","belgaum-emo-ramdurg","belgaum-emo-savadatti","belgaum-emo-raibag","belgaum-emo-bailhongal"],
+  },
+
+  "belgaum-emo-chikkodi": {
+    city: "Belgaum",
+    outletName: "EMO Chikkodi",
+    type: "EMO",
+    tagline: "Serving the Chikkodi Taluk",
+    address: "Near KSRTC Bus Stand, Chikkodi – 591 201, Belagavi District",
+    phone: "+91 83122 56789",
+    whatsapp: "918312256789",
+    email: "chikkodi@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 6:30 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Chikkodi+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Chikkodi", headline: "Chikkodi's Own\nTata Showroom", sub: "Quality Tata vehicles and after-sales support right here in Chikkodi taluk.", cta: "Explore Models" },
+      { tag: "Easy EMI", headline: "Drive Home Today\nWith Easy Finance", sub: "Flexible EMI plans tailored for Chikkodi and surrounding areas.", cta: "Check Finance" },
+      { tag: "EV Ready", headline: "Go Electric\nGo Green", sub: "Experience Tata's electric range at our Chikkodi outlet.", cta: "View EVs" },
+    ],
+    stats: [{ v: "600+", l: "Vehicles Sold" }, { v: "5+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#050f1f 0%,#0c2d5e 50%,#0a1628 100%)",
+    accentColor: "#64b5f6",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Full Tata Motors passenger vehicle lineup available." },
+      { icon: "💳", title: "Finance & EMI", desc: "Bank tie-ups for quick loan approvals." },
+      { icon: "🔄", title: "Exchange", desc: "Trade in your old vehicle for a new Tata." },
+      { icon: "📱", title: "Test Drive", desc: "Book a test drive at your convenience." },
+      { icon: "🛡️", title: "Insurance", desc: "Comprehensive & third-party insurance options." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine Tata accessories available on-site." },
+    ],
+    team: [
+      { name: "Sunil Patil",    role: "Outlet Manager",  ext: "101" },
+      { name: "Kaveri Nayak",   role: "Sales Executive", ext: "102" },
+      { name: "Deepak Chougule",role: "Sales Executive", ext: "103" },
+      { name: "Asha Kulkarni",  role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["belgaum-3s","belgaum-emo-ramdurg","belgaum-emo-savadatti","belgaum-emo-raibag","belgaum-emo-bailhongal"],
+  },
+
+  "belgaum-emo-ramdurg": {
+    city: "Belgaum",
+    outletName: "EMO Ramdurg",
+    type: "EMO",
+    tagline: "Ramdurg's Trusted Tata Outlet",
+    address: "Main Road, Near Govt Hospital, Ramdurg – 591 123, Belagavi District",
+    phone: "+91 83122 67890",
+    whatsapp: "918312267890",
+    email: "ramdurg@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Ramdurg+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Ramdurg", headline: "Ramdurg Welcomes\nTata Motors", sub: "Bringing the complete Tata experience to Ramdurg and surrounding villages.", cta: "Explore Models" },
+      { tag: "Rural Connect", headline: "Made for\nRamdurg Families", sub: "Affordable Tata vehicles with farmer-friendly finance options.", cta: "View Finance" },
+      { tag: "Book Today", headline: "Your Dream Car\nIs Here", sub: "Walk in or call to book a test drive in Ramdurg.", cta: "Book Test Drive" },
+    ],
+    stats: [{ v: "380+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.4★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#2d1810 50%,#1a0a00 100%)",
+    accentColor: "#ffca28",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Tata hatchbacks, sedans and SUVs available." },
+      { icon: "💳", title: "Finance", desc: "Agri & rural finance schemes available." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle exchange accepted." },
+      { icon: "📱", title: "Test Drive", desc: "On-spot or doorstep test drive." },
+      { icon: "🛡️", title: "Insurance", desc: "All insurance types available." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine Tata accessories stocked." },
+    ],
+    team: [
+      { name: "Basavaraj Patil", role: "Outlet Manager",  ext: "101" },
+      { name: "Rekha Hiremath",  role: "Sales Executive", ext: "102" },
+      { name: "Vinod Mane",      role: "Sales Executive", ext: "103" },
+      { name: "Lata Desai",      role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["belgaum-3s","belgaum-emo-chikkodi","belgaum-emo-savadatti","belgaum-emo-raibag","belgaum-emo-bailhongal"],
+  },
+
+  "belgaum-emo-savadatti": {
+    city: "Belgaum",
+    outletName: "EMO Savadatti",
+    type: "EMO",
+    tagline: "Savadatti's Preferred Tata Partner",
+    address: "Hubli–Dharwad Bypass, Savadatti – 591 126, Belagavi District",
+    phone: "+91 83122 78901",
+    whatsapp: "918312278901",
+    email: "savadatti@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:30 PM  |  Sun: By Appointment",
+    mapLink: "https://maps.google.com/?q=Savadatti+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Savadatti", headline: "Savadatti's\nTata Destination", sub: "Complete Tata Motors range available at our Savadatti outlet.", cta: "Explore Models" },
+      { tag: "Easy Buying", headline: "Simple Finance\nQuick Delivery", sub: "Paperless process. Get your Tata delivered within days.", cta: "Apply Finance" },
+      { tag: "CNG Available", headline: "CNG Variants\nNow In Stock", sub: "Tiago CNG and Tigor CNG available on priority at Savadatti.", cta: "Book CNG" },
+    ],
+    stats: [{ v: "420+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041520 0%,#0a3040 55%,#0d2035 100%)",
+    accentColor: "#4db6ac",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Wide range of Tata models in stock." },
+      { icon: "💳", title: "Finance", desc: "Quick approvals with minimal documentation." },
+      { icon: "🔄", title: "Exchange", desc: "Exchange your old vehicle at fair value." },
+      { icon: "🛣️", title: "CNG Booking", desc: "CNG variants available on priority." },
+      { icon: "🛡️", title: "Insurance", desc: "Comprehensive coverage options." },
+      { icon: "📱", title: "Test Drive", desc: "Book your slot online or by phone." },
+    ],
+    team: [
+      { name: "Shivappa Nayak",  role: "Outlet Manager",  ext: "101" },
+      { name: "Geeta Patil",     role: "Sales Executive", ext: "102" },
+      { name: "Arun Kambale",    role: "Sales Executive", ext: "103" },
+      { name: "Sunita Jadhav",   role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["belgaum-3s","belgaum-emo-chikkodi","belgaum-emo-ramdurg","belgaum-emo-raibag","belgaum-emo-bailhongal"],
+  },
+
+  "belgaum-emo-raibag": {
+    city: "Belgaum",
+    outletName: "EMO Raibag",
+    type: "EMO",
+    tagline: "Raibag's New Tata Experience",
+    address: "Station Road, Near Taluk Office, Raibag – 591 317, Belagavi District",
+    phone: "+91 83122 89012",
+    whatsapp: "918312289012",
+    email: "raibag@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Raibag+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Raibag", headline: "Raibag Now Has\nIts Own Tata Showroom", sub: "Quality vehicles, easy finance and great service — right here in Raibag.", cta: "Visit Us Today" },
+      { tag: "Village Reach", headline: "Serving Every\nCorner of Belagavi", sub: "Doorstep test drives available for customers 20+ km away.", cta: "Book Doorstep Drive" },
+      { tag: "New Arrivals", headline: "2026 Models\nNow Available", sub: "Check out the latest Tata lineup at our Raibag outlet.", cta: "Explore Models" },
+    ],
+    stats: [{ v: "290+", l: "Vehicles Sold" }, { v: "3+", l: "Years" }, { v: "4.4★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0d0d1a 0%,#1a1035 55%,#0a1628 100%)",
+    accentColor: "#ce93d8",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Popular Tata models available." },
+      { icon: "💳", title: "Finance", desc: "Rural and agri finance options." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle buyback accepted." },
+      { icon: "🏠", title: "Doorstep Drive", desc: "Test drive at your home or farm." },
+      { icon: "🛡️", title: "Insurance", desc: "All insurance plans available." },
+      { icon: "📱", title: "Digital Booking", desc: "WhatsApp booking accepted." },
+    ],
+    team: [
+      { name: "Mallikarjun Patil", role: "Outlet Manager",  ext: "101" },
+      { name: "Savita Wali",       role: "Sales Executive", ext: "102" },
+      { name: "Raju Kamble",       role: "Sales Executive", ext: "103" },
+      { name: "Usha Bhat",         role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["belgaum-3s","belgaum-emo-chikkodi","belgaum-emo-ramdurg","belgaum-emo-savadatti","belgaum-emo-bailhongal"],
+  },
+
+  "belgaum-emo-bailhongal": {
+    city: "Belgaum",
+    outletName: "EMO Bailhongal",
+    type: "EMO",
+    tagline: "Bailhongal's Trusted Tata Outlet",
+    address: "Dharwad Road, Near Bus Stand, Bailhongal – 591 102, Belagavi District",
+    phone: "+91 83122 90123",
+    whatsapp: "918312290123",
+    email: "bailhongal@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Bailhongal+Belagavi",
+    heroImage: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Bailhongal", headline: "Bailhongal Drives\nWith Tata", sub: "Your local Tata Motors partner for sales, finance and accessories.", cta: "Explore Models" },
+      { tag: "Sugar Belt Special", headline: "Farmer-Friendly\nFinance Plans", sub: "Special schemes for sugarcane farmers and rural customers in Bailhongal.", cta: "View Finance" },
+      { tag: "New Punch & Tiago", headline: "India's Safest\nSmall Cars Here", sub: "Punch & Tiago — 5-star safety rated — available at Bailhongal.", cta: "Book Test Drive" },
+    ],
+    stats: [{ v: "310+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041a10 0%,#0a3020 55%,#041510 100%)",
+    accentColor: "#81c784",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Tata passenger vehicles for all budgets." },
+      { icon: "💳", title: "Agri Finance", desc: "Farmer-friendly EMI with easy documentation." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle accepted at fair value." },
+      { icon: "📱", title: "WhatsApp Booking", desc: "Book test drive via WhatsApp instantly." },
+      { icon: "🛡️", title: "Insurance", desc: "Third-party & comprehensive plans." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine Tata accessories available." },
+    ],
+    team: [
+      { name: "Prakash Patil",  role: "Outlet Manager",  ext: "101" },
+      { name: "Laxmi Goudra",   role: "Sales Executive", ext: "102" },
+      { name: "Kiran Bevoor",   role: "Sales Executive", ext: "103" },
+      { name: "Nanda Koujalagi",role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["belgaum-3s","belgaum-emo-chikkodi","belgaum-emo-ramdurg","belgaum-emo-savadatti","belgaum-emo-raibag"],
+  },
+
+  // ══════════════════════════════════════════════
+  //  HUBLI  (4 outlets)
+  // ══════════════════════════════════════════════
+
+  "hubli-3s": {
+    city: "Hubli",
+    outletName: "3'S Hubli",
+    type: "3S",
+    tagline: "The Commercial Capital's Premier Showroom",
+    address: "Opp. Utsav Hotel, Gokul Road, Hubballi – 580 030",
+    phone: "+91 83622 11234",
+    whatsapp: "918362211234",
+    email: "hubli@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 7:30 PM  |  Sun: 10:00 AM – 5:00 PM",
+    mapLink: "https://maps.google.com/?q=Gokul+Road+Hubballi",
+    heroImage: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600&q=80",
+    heroSlides: [
+      { tag: "Hubli 3S Showroom", headline: "Hubli's Largest\nTata Experience", sub: "Full Sales, Service & Spares at our flagship Gokul Road showroom.", cta: "Explore Models" },
+      { tag: "Top Rated", headline: "4.9 Stars.\nHubli's Most Trusted.", sub: "Over 3,500 happy families and counting across Hubli-Dharwad.", cta: "Visit Us" },
+      { tag: "EV Hub", headline: "Electric Vehicle\nTest Drive Centre", sub: "Experience all Tata EVs in a single visit at our Hubli showroom.", cta: "Book EV Drive" },
+    ],
+    stats: [{ v: "3,500+", l: "Vehicles Sold" }, { v: "18+", l: "Years" }, { v: "4.9★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#050f1f 0%,#0c2d5e 50%,#1a5276 100%)",
+    accentColor: "#00e676",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "State-of-the-art service bays with trained technicians." },
+      { icon: "💳", title: "Finance & Insurance", desc: "In-house finance desk with same-day approvals." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Up to 5-year extended warranty on all models." },
+      { icon: "🔄", title: "Exchange Programme", desc: "Best exchange value in Hubli-Dharwad region." },
+      { icon: "📱", title: "Digital Services", desc: "Online booking for test drives and service." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Home pickup for servicing across Hubli city." },
+    ],
+    team: [
+      { name: "Suresh Kulkarni", role: "Showroom Manager",     ext: "101" },
+      { name: "Meena Joshi",     role: "Senior Sales Manager", ext: "102" },
+      { name: "Vijay Naik",      role: "Service Head",         ext: "201" },
+      { name: "Deepa Honnur",    role: "Finance & Insurance",  ext: "301" },
+    ],
+    siblings: ["hubli-emo-haveri","hubli-emo-mudeshwar","hubli-emo-sirsi"],
+  },
+
+  "hubli-emo-haveri": {
+    city: "Hubli",
+    outletName: "EMO Haveri",
+    type: "EMO",
+    tagline: "Haveri District's Tata Sales Centre",
+    address: "Bangalore–Pune Highway, Near KSRTC, Haveri – 581 110",
+    phone: "+91 83742 22345",
+    whatsapp: "918374222345",
+    email: "haveri@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:30 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Haveri+Karnataka",
+    heroImage: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Haveri", headline: "Haveri Now Drives\nWith Tata", sub: "Your nearest Tata Motors outlet right here in Haveri.", cta: "Explore Models" },
+      { tag: "Highway Location", headline: "Conveniently Located\non Bangalore–Pune NH", sub: "Easy access from Haveri city and surrounding taluks.", cta: "Get Directions" },
+      { tag: "Easy Ownership", headline: "Simple Steps\nTo Your New Tata", sub: "Test drive. Choose. Finance. Drive home — all in one day.", cta: "Book Today" },
+    ],
+    stats: [{ v: "520+", l: "Vehicles Sold" }, { v: "5+", l: "Years" }, { v: "4.6★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#1a3d7c 55%,#0a2240 100%)",
+    accentColor: "#ff8a65",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Full lineup of Tata passenger vehicles." },
+      { icon: "💳", title: "Finance", desc: "Leading bank tie-ups for quick approvals." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle exchange facility." },
+      { icon: "📱", title: "Test Drive", desc: "Scheduled test drives available daily." },
+      { icon: "🛡️", title: "Insurance", desc: "All insurance options in one place." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine accessories stocked on-site." },
+    ],
+    team: [
+      { name: "Girish Patil",   role: "Outlet Manager",  ext: "101" },
+      { name: "Shanta Desai",   role: "Sales Executive", ext: "102" },
+      { name: "Ravi Nayak",     role: "Sales Executive", ext: "103" },
+      { name: "Priya Kambar",   role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["hubli-3s","hubli-emo-mudeshwar","hubli-emo-sirsi"],
+  },
+
+  "hubli-emo-mudeshwar": {
+    city: "Hubli",
+    outletName: "EMO Mudeshwar",
+    type: "EMO",
+    tagline: "Coastal Gateway Tata Outlet",
+    address: "Main Market Road, Near Taluk Panchayat, Murudeshwar – 581 350, Uttara Kannada",
+    phone: "+91 83852 33456",
+    whatsapp: "918385233456",
+    email: "mudeshwar@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:00 PM  |  Sun: By Appointment",
+    mapLink: "https://maps.google.com/?q=Murudeshwar+Karnataka",
+    heroImage: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Murudeshwar", headline: "Temple Town's\nTata Showroom", sub: "Serving Murudeshwar, Bhatkal and coastal Karnataka with quality Tata vehicles.", cta: "Explore Models" },
+      { tag: "Coastal Special", headline: "Salt-Proofed\nProtection Packages", sub: "Underbody coating & anti-rust treatment free on all bookings this month.", cta: "Book Now" },
+      { tag: "Finance Ready", headline: "Drive Today\nPay Comfortably", sub: "Flexible EMI starting from ₹6,999/month on select models.", cta: "Check EMI" },
+    ],
+    stats: [{ v: "310+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041520 0%,#0a3040 55%,#0d2035 100%)",
+    accentColor: "#4db6ac",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Tata models suitable for coastal terrain." },
+      { icon: "🛡️", title: "Anti-Rust Package", desc: "Salt-proof underbody treatment for coastal use." },
+      { icon: "💳", title: "Finance", desc: "Quick bank approvals for coastal region customers." },
+      { icon: "🔄", title: "Exchange", desc: "Trade-in accepted." },
+      { icon: "📱", title: "WhatsApp Booking", desc: "Easy booking via WhatsApp." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine Tata accessories." },
+    ],
+    team: [
+      { name: "Chandrakant Shetty", role: "Outlet Manager",  ext: "101" },
+      { name: "Padma Naik",         role: "Sales Executive", ext: "102" },
+      { name: "Sunil Hegde",        role: "Sales Executive", ext: "103" },
+      { name: "Asha Vernekar",      role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["hubli-3s","hubli-emo-haveri","hubli-emo-sirsi"],
+  },
+
+  "hubli-emo-sirsi": {
+    city: "Hubli",
+    outletName: "EMO Sirsi",
+    type: "EMO",
+    tagline: "Western Ghats' Tata Destination",
+    address: "Yellapur Road, Opp. SBI Bank, Sirsi – 581 401, Uttara Kannada",
+    phone: "+91 83842 44567",
+    whatsapp: "918384244567",
+    email: "sirsi@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Sirsi+Uttara+Kannada",
+    heroImage: "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Sirsi", headline: "Sirsi's Premier\nTata Experience", sub: "Quality Tata vehicles right in the heart of Uttara Kannada district.", cta: "Explore Models" },
+      { tag: "Ghats Ready", headline: "Built Tough\nFor Ghat Roads", sub: "Nexon, Punch and Harrier — perfect for Western Ghats terrain.", cta: "View SUVs" },
+      { tag: "Easy Ownership", headline: "Book Today\nDeliver This Week", sub: "Fast paperwork and quick delivery across Sirsi taluk.", cta: "Book Now" },
+    ],
+    stats: [{ v: "370+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.6★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041a10 0%,#0a3020 55%,#041510 100%)",
+    accentColor: "#81c784",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "SUVs ideal for Ghat and rural roads." },
+      { icon: "💳", title: "Finance", desc: "Approved financing for Uttara Kannada residents." },
+      { icon: "🔄", title: "Exchange", desc: "Exchange your old vehicle at fair price." },
+      { icon: "📱", title: "Test Drive", desc: "On-road test drives on Ghat routes." },
+      { icon: "🛡️", title: "Insurance", desc: "Comprehensive coverage options." },
+      { icon: "🎁", title: "Accessories", desc: "Terrain-suitable Tata accessories." },
+    ],
+    team: [
+      { name: "Nagesh Hegde",   role: "Outlet Manager",  ext: "101" },
+      { name: "Vijaya Naik",    role: "Sales Executive", ext: "102" },
+      { name: "Santosh Nayak",  role: "Sales Executive", ext: "103" },
+      { name: "Roopa Kulkarni", role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["hubli-3s","hubli-emo-haveri","hubli-emo-mudeshwar"],
+  },
+
+  // ══════════════════════════════════════════════
+  //  DHARWAD  (1 outlet)
+  // ══════════════════════════════════════════════
+
+  "dharwad-3s": {
+    city: "Dharwad",
+    outletName: "3'S Dharwad",
+    type: "3S",
+    tagline: "City of Music & Motoring Excellence",
+    address: "NH-4, Near Indira Glass House, Dharwad – 580 001",
+    phone: "+91 83622 77891",
+    whatsapp: "918362277891",
+    email: "dharwad@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 7:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=NH4+Dharwad",
+    heroImage: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=1600&q=80",
+    heroSlides: [
+      { tag: "Dharwad 3S", headline: "Dharwad's Complete\nTata Experience", sub: "Sales, Service and Spares under one roof on NH-4 Dharwad.", cta: "Explore Models" },
+      { tag: "University City", headline: "Built for Dharwad's\nAcademic Families", sub: "Special pricing for university staff, researchers and students.", cta: "View Offers" },
+      { tag: "Heritage City Drive", headline: "Explore Karnataka\nin a Tata", sub: "Test drive any model today at our NH-4 showroom.", cta: "Book Test Drive" },
+    ],
+    stats: [{ v: "1,900+", l: "Vehicles Sold" }, { v: "12+", l: "Years" }, { v: "4.7★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#2d1810 50%,#1a0a00 100%)",
+    accentColor: "#ffca28",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "Genuine parts, trained technicians." },
+      { icon: "💳", title: "Finance & Insurance", desc: "University & corporate employee schemes available." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Up to 5-year warranty plans." },
+      { icon: "🔄", title: "Exchange", desc: "Seamless upgrade programme." },
+      { icon: "📱", title: "Digital Booking", desc: "Book test drives and service online." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Pickup & drop for Dharwad city customers." },
+    ],
+    team: [
+      { name: "Ganesh Hublikar", role: "Showroom Manager",  ext: "101" },
+      { name: "Kavya Nadaf",     role: "Sales Executive",   ext: "102" },
+      { name: "Ravi Patil",      role: "Service Advisor",   ext: "201" },
+      { name: "Suma Bhatt",      role: "Finance & Insurance", ext: "301" },
+    ],
+    siblings: [],
+  },
+
+  // ══════════════════════════════════════════════
+  //  KARWAR  (2 outlets)
+  // ══════════════════════════════════════════════
+
+  "karwar-3s": {
+    city: "Karwar",
+    outletName: "3'S Karwar",
+    type: "3S",
+    tagline: "Coastal Karnataka's Premier Tata Dealer",
+    address: "Near NH-66, Sadashivgad Road, Karwar – 581 301",
+    phone: "+91 83822 34567",
+    whatsapp: "918382234567",
+    email: "karwar@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:30 PM  |  Sun: 10:00 AM – 4:00 PM",
+    mapLink: "https://maps.google.com/?q=Sadashivgad+Road+Karwar",
+    heroImage: "https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?w=1600&q=80",
+    heroSlides: [
+      { tag: "Karwar 3S", headline: "Where the Sea Meets\nYour Dream Drive", sub: "Full Tata Motors experience on the scenic Karwar coastline.", cta: "Explore Models" },
+      { tag: "Defence City", headline: "Proud Partner of\nINS Kadamba Families", sub: "Special pricing and priority service for defence personnel.", cta: "Defence Offer" },
+      { tag: "Monsoon Ready", headline: "Monsoon-Proof\nProtection Packages", sub: "Free underbody coating + waterproofing on all new bookings.", cta: "Book Now" },
+    ],
+    stats: [{ v: "1,200+", l: "Vehicles Sold" }, { v: "8+", l: "Years" }, { v: "4.6★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041520 0%,#0a3040 55%,#0d2035 100%)",
+    accentColor: "#4db6ac",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "Genuine Tata parts and trained service team." },
+      { icon: "💳", title: "Finance & Insurance", desc: "Special defence personnel finance schemes." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Coastal climate-tested warranty plans." },
+      { icon: "🛡️", title: "Anti-Rust Package", desc: "Underbody coating free on all new vehicles." },
+      { icon: "📱", title: "Digital Booking", desc: "Online booking for test drives & service." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Home pickup from Karwar, Ankola & Kumta." },
+    ],
+    team: [
+      { name: "Santosh Naik",  role: "Showroom Manager",   ext: "101" },
+      { name: "Archana Gawas", role: "Sales Executive",     ext: "102" },
+      { name: "Dilip Shetty",  role: "Service Advisor",     ext: "201" },
+      { name: "Rekha Naik",    role: "Finance & Insurance", ext: "301" },
+    ],
+    siblings: ["karwar-emo-ankola"],
+  },
+
+  "karwar-emo-ankola": {
+    city: "Karwar",
+    outletName: "EMO Ankola",
+    type: "EMO",
+    tagline: "Ankola's Nearest Tata Outlet",
+    address: "NH-66, Opp. Govt Hospital, Ankola – 581 314, Uttara Kannada",
+    phone: "+91 83822 45678",
+    whatsapp: "918382245678",
+    email: "ankola@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Ankola+Uttara+Kannada",
+    heroImage: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Ankola", headline: "Ankola's Own\nTata Showroom", sub: "Serving Ankola and the surrounding coastal taluks with quality Tata vehicles.", cta: "Explore Models" },
+      { tag: "Coastal Living", headline: "Built for\nCoastal Roads", sub: "SUVs and sedans tested for coastal conditions. Anti-rust treatment available.", cta: "View SUVs" },
+      { tag: "Quick Finance", headline: "Drive Home\nThis Weekend", sub: "Fast approvals — minimum paperwork required.", cta: "Apply Finance" },
+    ],
+    stats: [{ v: "280+", l: "Vehicles Sold" }, { v: "3+", l: "Years" }, { v: "4.4★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041520 0%,#0a3040 55%,#0d2035 100%)",
+    accentColor: "#80cbc4",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Popular Tata models stocked." },
+      { icon: "🛡️", title: "Anti-Rust", desc: "Coastal anti-rust protection on all vehicles." },
+      { icon: "💳", title: "Finance", desc: "Quick loan approvals." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle exchange facility." },
+      { icon: "📱", title: "Test Drive", desc: "Book a slot or walk in." },
+      { icon: "🎁", title: "Accessories", desc: "Coastal-suitable accessories available." },
+    ],
+    team: [
+      { name: "Suresh Gawas",  role: "Outlet Manager",  ext: "101" },
+      { name: "Prema Naik",    role: "Sales Executive", ext: "102" },
+      { name: "Anand Hegde",   role: "Sales Executive", ext: "103" },
+      { name: "Sujata Shetty", role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["karwar-3s"],
+  },
+
+  // ══════════════════════════════════════════════
+  //  BIJAPUR / VIJAYAPURA  (1 outlet)
+  // ══════════════════════════════════════════════
+
+  "bijapur-3s": {
+    city: "Bijapur",
+    outletName: "3'S Bijapur",
+    type: "3S",
+    tagline: "Heritage City, Modern Mobility",
+    address: "Station Road, Near Golgumbaz Chowk, Vijayapura – 586 101",
+    phone: "+91 83522 98765",
+    whatsapp: "918352298765",
+    email: "bijapur@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 7:00 PM  |  Sun: 10:00 AM – 5:00 PM",
+    mapLink: "https://maps.google.com/?q=Station+Road+Vijayapura",
+    heroImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1600&q=80",
+    heroSlides: [
+      { tag: "Bijapur 3S", headline: "Vijayapura's Most\nTrusted Tata Dealer", sub: "Full Sales, Service & Spares experience near the iconic Golgumbaz.", cta: "Explore Models" },
+      { tag: "Agri Finance", headline: "Farmer-First\nFinance Plans", sub: "Specially designed EMI plans for Bijapur's farming families.", cta: "View Finance" },
+      { tag: "Top Seller", headline: "Nexon. Punch. Safari.\nAll Here.", sub: "India's best-selling Tata SUVs available at our Bijapur showroom.", cta: "Book Test Drive" },
+    ],
+    stats: [{ v: "2,100+", l: "Vehicles Sold" }, { v: "10+", l: "Years" }, { v: "4.7★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#1a0a00 0%,#3d1f00 50%,#0a1628 100%)",
+    accentColor: "#ff8a65",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "Certified technicians and genuine Tata parts." },
+      { icon: "💳", title: "Finance & Insurance", desc: "Agri loans and farmer-friendly EMI available." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Warranty plans up to 5 years." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle accepted at best value." },
+      { icon: "📱", title: "Digital Booking", desc: "Book from your phone anytime." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Service pickup for Bijapur city." },
+    ],
+    team: [
+      { name: "Ibrahim Mulla",  role: "Showroom Manager",   ext: "101" },
+      { name: "Farhana Inamdar",role: "Sales Executive",     ext: "102" },
+      { name: "Sunil Patil",    role: "Service Advisor",     ext: "201" },
+      { name: "Nazia Shaikh",   role: "Finance & Insurance", ext: "301" },
+    ],
+    siblings: [],
+  },
+
+  // ══════════════════════════════════════════════
+  //  GULBARGA / KALABURAGI  (flagship + sub-outlets)
+  // ══════════════════════════════════════════════
+
+  "gulbarga-3s": {
+    city: "Gulbarga",
+    outletName: "3'S Kalaburagi — Flagship",
+    type: "3S",
+    tagline: "Our Flagship — Established 1962",
+    address: "Super Market, M G Road, Kalaburagi – 585 101",
+    phone: "+91 96860 24365",
+    whatsapp: "919686024365",
+    email: "gulbarga@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 7:30 PM  |  Sun: 10:00 AM – 5:30 PM",
+    mapLink: "https://maps.google.com/?q=MG+Road+Kalaburagi",
+    heroImage: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1600&q=80",
+    heroSlides: [
+      { tag: "Since 1962 · Flagship", headline: "Where It All\nBegan in 1962", sub: "Our flagship showroom — the birthplace of the Manickbag legacy on MG Road, Kalaburagi.", cta: "Explore Our Story" },
+      { tag: "62+ Years of Trust", headline: "North Karnataka's\nMost Trusted Name", sub: "Over 8,000 families served. Three generations. One commitment — excellence.", cta: "View Models" },
+      { tag: "Full EV Range", headline: "Drive the Future\nFrom Kalaburagi", sub: "All Tata EVs available for extended test drives at our flagship centre.", cta: "Book EV Drive" },
+    ],
+    stats: [{ v: "8,000+", l: "Vehicles Sold" }, { v: "62+", l: "Years" }, { v: "4.9★", l: "Rating" }, { v: "Flagship", l: "Status" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#1a3d7c 60%,#0a1628 100%)",
+    accentColor: "#b8963e",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "State-of-the-art facility with 20+ service bays." },
+      { icon: "💳", title: "Finance & Insurance", desc: "In-house processing — 2-hour approval guarantee." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Up to 5-year warranty on all models." },
+      { icon: "🔄", title: "Exchange Programme", desc: "Best exchange rates in North Karnataka." },
+      { icon: "📱", title: "Digital Services", desc: "Complete digital ownership journey." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Home pickup across Kalaburagi & Yadgiri." },
+    ],
+    team: [
+      { name: "Vijay Shah",     role: "Director & GM",        ext: "001" },
+      { name: "Ameen Mirji",    role: "Operations Manager",   ext: "002" },
+      { name: "Lakshmi Patil",  role: "Senior Sales Manager", ext: "101" },
+      { name: "Mohan Reddy",    role: "Service Head",         ext: "201" },
+    ],
+    siblings: ["gulbarga-emo-yadgiri","gulbarga-emo-bidar"],
+  },
+
+  "gulbarga-emo-yadgiri": {
+    city: "Gulbarga",
+    outletName: "EMO Yadgiri",
+    type: "EMO",
+    tagline: "Yadgiri's First Tata Outlet",
+    address: "Shorapur Road, Near Bus Stand, Yadgiri – 585 201",
+    phone: "+91 84733 12345",
+    whatsapp: "918473312345",
+    email: "yadgiri@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:30 PM  |  Sun: By Appointment",
+    mapLink: "https://maps.google.com/?q=Shorapur+Road+Yadgiri",
+    heroImage: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO Yadgiri", headline: "Yadgiri's Own\nTata Showroom", sub: "The newest district in Karnataka now has its own Tata Motors outlet.", cta: "Explore Models" },
+      { tag: "Village Reach", headline: "Doorstep Test Drive\nAnywhere in Yadgiri", sub: "We come to you — doorstep test drives for customers 30+ km away.", cta: "Book Doorstep" },
+      { tag: "CNG Available", headline: "CNG Variants\nIn Stock Now", sub: "Tiago & Tigor CNG available on priority at Yadgiri outlet.", cta: "Book CNG" },
+    ],
+    stats: [{ v: "800+", l: "Vehicles Sold" }, { v: "5+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#041a10 0%,#0a3020 55%,#041510 100%)",
+    accentColor: "#81c784",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Popular models for new district customers." },
+      { icon: "🏠", title: "Doorstep Drive", desc: "Test drive at your home or village." },
+      { icon: "💳", title: "Rural Finance", desc: "Minimal documentation for rural buyers." },
+      { icon: "🔄", title: "Exchange", desc: "Old vehicle exchange accepted." },
+      { icon: "🛣️", title: "CNG Priority", desc: "CNG variants on priority at this outlet." },
+      { icon: "🛡️", title: "Insurance", desc: "All plans available on-site." },
+    ],
+    team: [
+      { name: "Ramesh Nayak",  role: "Outlet Manager",  ext: "101" },
+      { name: "Geetha Reddy",  role: "Sales Executive", ext: "102" },
+      { name: "Kiran Patil",   role: "Sales Executive", ext: "103" },
+      { name: "Anita Biradar", role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["gulbarga-3s","gulbarga-emo-bidar"],
+  },
+
+  "gulbarga-emo-bidar": {
+    city: "Gulbarga",
+    outletName: "EMO Bidar",
+    type: "EMO",
+    tagline: "Cement City's Tata Partner",
+    address: "Gulbarga Road, Near Cement Factory Chowk, bidar – 585 228, Kalaburagi District",
+    phone: "+91 84732 23456",
+    whatsapp: "918473223456",
+    email: "bidar@manickbag.in",
+    hours: "Mon–Sat: 9:00 AM – 6:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Bidar+Kalaburagi",
+    heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80",
+    heroSlides: [
+      { tag: "EMO bidar", headline: "Bidar Drives\nWith Tata", sub: "Serving cement industry workers and families across Bidar.", cta: "Explore Models" },
+      { tag: "Industrial City", headline: "Vehicles for\nEvery Budget", sub: "From the entry-level Tiago to the premium Safari — all in Bidar.", cta: "View Range" },
+      { tag: "Fast Finance", headline: "Salary-Based EMI\nFor Industry Workers", sub: "Special salary-based EMI plans for cement industry employees.", cta: "Apply Now" },
+    ],
+    stats: [{ v: "450+", l: "Vehicles Sold" }, { v: "4+", l: "Years" }, { v: "4.5★", l: "Rating" }, { v: "EMO", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0a1628 0%,#1a3d7c 60%,#0a1628 100%)",
+    accentColor: "#90a4ae",
+    services: [
+      { icon: "🚗", title: "Vehicle Sales", desc: "Full range of Tata passenger vehicles." },
+      { icon: "💳", title: "Salary EMI", desc: "Salary-based loans for industrial workers." },
+      { icon: "🔄", title: "Exchange", desc: "Old car exchange at fair value." },
+      { icon: "📱", title: "Test Drive", desc: "Daily test drives available." },
+      { icon: "🛡️", title: "Insurance", desc: "All types of vehicle insurance." },
+      { icon: "🎁", title: "Accessories", desc: "Genuine Tata accessories stocked." },
+    ],
+    team: [
+      { name: "Sheshappa Reddy", role: "Outlet Manager",  ext: "101" },
+      { name: "Roopa Patil",     role: "Sales Executive", ext: "102" },
+      { name: "Raju Bidar",      role: "Sales Executive", ext: "103" },
+      { name: "Meera Yadav",     role: "Finance Desk",    ext: "201" },
+    ],
+    siblings: ["gulbarga-3s","gulbarga-emo-yadgiri"],
+  },
+
+  // ══════════════════════════════════════════════
+  //  BIDAR  (1 outlet)
+  // ══════════════════════════════════════════════
+
+  "bidar-3s": {
+    city: "Bidar",
+    outletName: "3'S Bidar",
+    type: "3S",
+    tagline: "Historic Deccan's Automotive Hub",
+    address: "Udgir Road, Opp. District Court, Bidar – 585 401",
+    phone: "+91 84822 55678",
+    whatsapp: "918482255678",
+    email: "bidar@manickbag.in",
+    hours: "Mon–Sat: 9:30 AM – 7:00 PM  |  Sun: Closed",
+    mapLink: "https://maps.google.com/?q=Udgir+Road+Bidar",
+    heroImage: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=1600&q=80",
+    heroSlides: [
+      { tag: "Bidar 3S", headline: "Bidar's Complete\nTata Experience", sub: "Sales, Service & Spares in the heart of historic Bidar district.", cta: "Explore Models" },
+      { tag: "Defence City", headline: "Proud to Serve\nBidar Air Force Families", sub: "Special pricing and priority delivery for defence personnel.", cta: "Defence Offer" },
+      { tag: "Bidriware Heritage", headline: "Exclusive Matte\nFinish Packages", sub: "Inspired by Bidriware art — exclusive matte colours at Bidar outlet.", cta: "View Packages" },
+    ],
+    stats: [{ v: "1,600+", l: "Vehicles Sold" }, { v: "9+", l: "Years" }, { v: "4.6★", l: "Rating" }, { v: "Full 3S", l: "Facility" }],
+    gradient: "linear-gradient(135deg,#0d0d1a 0%,#1a1035 55%,#0a1628 100%)",
+    accentColor: "#ce93d8",
+    services: [
+      { icon: "🔧", title: "Authorised Service", desc: "Factory-trained technicians and genuine parts." },
+      { icon: "💳", title: "Finance & Insurance", desc: "Defence-special and general EMI plans." },
+      { icon: "🚗", title: "Extended Warranty", desc: "Warranty up to 5 years available." },
+      { icon: "🔄", title: "Exchange", desc: "Best exchange value in Bidar district." },
+      { icon: "📱", title: "Digital Booking", desc: "Book test drives and service online." },
+      { icon: "🏠", title: "Doorstep Service", desc: "Home pickup across Bidar city." },
+    ],
+    team: [
+      { name: "Prasad Kulkarni", role: "Showroom Manager",   ext: "101" },
+      { name: "Savita Desai",    role: "Sales Executive",     ext: "102" },
+      { name: "Raju Yadav",      role: "Service Advisor",     ext: "201" },
+      { name: "Neeta Jadhav",    role: "Finance & Insurance", ext: "301" },
+    ],
+    siblings: [],
+  },
+
+};
+
+// ─── Helper: get display label from outlet key ───────────────────
+export const getOutletLabel = (key) => OUTLETS[key]?.outletName ?? key;
+
+// ─── Helper: get all outlets for a city ─────────────────────────
+export const getOutletsByCity = (city) =>
+  Object.entries(OUTLETS)
+    .filter(([, v]) => v.city.toLowerCase() === city.toLowerCase())
+    .map(([key, v]) => ({ key, ...v }));
+
+// ─── Nav structure — maps each city to its outlet keys ──────────
+export const CITY_NAV = {
+  Belgaum: ["belgaum-3s","belgaum-emo-chikkodi","belgaum-emo-ramdurg","belgaum-emo-savadatti","belgaum-emo-raibag","belgaum-emo-bailhongal"],
+  Hubli:   ["hubli-3s","hubli-emo-haveri","hubli-emo-mudeshwar","hubli-emo-sirsi"],
+  Dharwad: ["dharwad-3s"],
+  Karwar:  ["karwar-3s","karwar-emo-ankola"],
+  Bijapur: ["bijapur-3s"],
+  Gulbarga:["gulbarga-3s","gulbarga-emo-bidar","gulbarga-emo-yadgiri"],
+
+};
