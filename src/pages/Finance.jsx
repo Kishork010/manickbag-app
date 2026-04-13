@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
+
 
 const BRAND = {
   navy: "#0a1628", navyMid: "#0c1f3f", navyLight: "#1a3d7c",
@@ -534,6 +535,15 @@ const ApplyForm = () => {
 };
 
 export default function Finance() {
+  // ← ADD THIS useEffect right here, at the top of the function
+  useEffect(() => {
+    if (window.location.hash === '#calculator') {
+      setTimeout(() => {
+        document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }, []);
+
   return (
     <Layout>
       <PageStyles />
