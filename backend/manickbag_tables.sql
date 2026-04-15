@@ -362,3 +362,33 @@ CREATE TABLE showroom_enquiries (
     status         ENUM('new','contacted','converted','closed') NOT NULL DEFAULT 'new',
     created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE vas_enquiries (
+    id               INT AUTO_INCREMENT PRIMARY KEY,
+    name             VARCHAR(120)  NOT NULL,
+    phone            VARCHAR(15)   NOT NULL,
+    email            VARCHAR(120)  DEFAULT NULL,
+    city             VARCHAR(80)   DEFAULT NULL,
+    vehicle_model    VARCHAR(100)  DEFAULT NULL,
+    registration_no  VARCHAR(30)   DEFAULT NULL,
+    service_name     VARCHAR(150)  DEFAULT NULL,
+    category_name    VARCHAR(80)   DEFAULT NULL,
+    preferred_date   DATE          DEFAULT NULL,
+    message          TEXT          DEFAULT NULL,
+    status           ENUM('new','contacted','converted','closed') NOT NULL DEFAULT 'new',
+    created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE rsa_enquiries (
+    id               INT AUTO_INCREMENT PRIMARY KEY,
+    name             VARCHAR(120)  NOT NULL,
+    phone            VARCHAR(15)   NOT NULL,
+    email            VARCHAR(120)  DEFAULT NULL,
+    city             VARCHAR(80)   DEFAULT NULL,
+    vehicle_model    VARCHAR(100)  DEFAULT NULL,
+    registration_no  VARCHAR(30)   DEFAULT NULL,
+    message          TEXT          DEFAULT NULL,
+    plan_name        VARCHAR(100)  DEFAULT NULL,
+    status           ENUM('new','contacted','converted','closed') NOT NULL DEFAULT 'new',
+    created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -4,10 +4,6 @@
 //
 //  ADD TO public/index.html <head>:
 //  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-//
-//  PRICING DATA: loaded from /public/pricing.xlsx at runtime
-//  (or falls back to embedded data if file not found)
-//
 //  USAGE IN Home.jsx:
 //    1. import QuotePopup from "./QuotePopup";
 //    2. const [quoteVehicle, setQuoteVehicle] = useState(null);
