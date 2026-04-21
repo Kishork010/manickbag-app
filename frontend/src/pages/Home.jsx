@@ -142,7 +142,7 @@ const FontLink = () => (
 // ── API ───────────────────────────────────────────────────────────
 const API_BASE = (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_API_URL)
   ? import.meta.env.VITE_API_URL
-  : "https://www.manickbag.in/backend/api";
+  : "/backend/api";
 
 async function apiPost(endpoint, body) {
   const res = await fetch(API_BASE + "/" + endpoint, {

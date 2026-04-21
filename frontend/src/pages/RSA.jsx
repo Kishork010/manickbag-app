@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
+const API_BASE = import.meta.env.VITE_API_URL || "/backend/api";
+
 const BRAND = {
   navy: "#0a1628", navyMid: "#0c1f3f", navyLight: "#1a3d7c",
   gold: "#b8963e", goldLight: "#d4af5a",
@@ -61,14 +63,14 @@ const RSAModal = ({ planName, onClose }) => {
     if (!/^\d{10}$/.test(form.phone.trim())) return setMsg("Enter a valid 10-digit phone number");
     setStatus("loading"); setMsg("");
     try {
-      const res  = await fetch("/api/rsa_enquiry", {
+      const res  = await fetch(`${API_BASE}/rsa_enquiry.php`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, plan_name: planName || "General RSA Enquiry" }),
       });
       const data = await res.json();
-      if (data.success) { setStatus("success"); setMsg(data.message); }
-      else              { setStatus("error");   setMsg(data.error || "Something went wrong."); }
+      if (data.status === "success") { setStatus("success"); setMsg(data.message); }
+      else                           { setStatus("error");   setMsg(data.message || "Something went wrong."); }
     } catch {
       setStatus("error"); setMsg("Network error. Please try again.");
     }

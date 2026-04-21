@@ -15,18 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // ── DB Config ─────────────────────────────────────────────────
-$host = 'localhost';
-$db   = 'YOUR_DB_NAME';
-$user = 'YOUR_DB_USER';
-$pass = 'YOUR_DB_PASSWORD';
-
-$conn = mysqli_connect($host, $user, $pass, $db);
-if (!$conn) {
-    http_response_code(500);
-    echo json_encode(["status" => "error", "message" => "Database connection failed: " . mysqli_connect_error()]);
-    exit();
-}
-mysqli_set_charset($conn, "utf8mb4");
+require_once __DIR__ . '/../config/db.php';
 
 // ── Helpers ───────────────────────────────────────────────────
 function sendResponse($code, $status, $message, $data = null) {

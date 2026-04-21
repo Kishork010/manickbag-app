@@ -137,7 +137,7 @@ const TIME_SLOTS = [
 
 const FUEL_TYPES = ["Petrol","Diesel","iCNG","Electric"];
 
-const API_BASE = import.meta.env.VITE_API_URL || "https://www.manickbag.in/backend/api";
+const API_BASE = import.meta.env.VITE_API_URL || "/backend/api";
 
 async function apiPost(endpoint, body) {
   const res = await fetch(API_BASE + "/" + endpoint, {

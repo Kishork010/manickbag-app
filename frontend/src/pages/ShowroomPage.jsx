@@ -3,6 +3,8 @@ import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import { OUTLETS, CITY_NAV } from "./showroomData";
 import Layout from "./Layout";
 
+const API_BASE = import.meta.env.VITE_API_URL || "/backend/api";
+
 const BRAND = {
   navy: "#0a1628", navyMid: "#0c1f3f", navyLight: "#1a3d7c",
   gold: "#b8963e", goldLight: "#d4af5a", goldPale: "#f0e4c2",
@@ -89,7 +91,7 @@ const EnquiryModal = ({ title, subtitle, outlet, extraFields = [], onClose }) =>
     if (!/^\d{10}$/.test(form.phone.trim())) return setMsg("Enter a valid 10-digit phone number");
     setStatus("loading"); setMsg("");
     try {
-      const res  = await fetch("/api/showroom_enquiry", {
+      const res  = await fetch(`${API_BASE}/showroom_enquiry.php`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -100,8 +102,8 @@ const EnquiryModal = ({ title, subtitle, outlet, extraFields = [], onClose }) =>
         }),
       });
       const data = await res.json();
-      if (data.success) { setStatus("success"); setMsg(data.message); }
-      else              { setStatus("error");   setMsg(data.error || "Something went wrong."); }
+      if (data.status === "success") { setStatus("success"); setMsg(data.message); }
+      else                           { setStatus("error");   setMsg(data.message || "Something went wrong."); }
     } catch {
       setStatus("error"); setMsg("Network error. Please try again.");
     }

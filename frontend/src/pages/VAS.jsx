@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
+const API_BASE = import.meta.env.VITE_API_URL || "/backend/api";
+
 const BRAND = {
   navy: "#0a1628", navyMid: "#0c1f3f", navyLight: "#1a3d7c",
   gold: "#b8963e", goldLight: "#d4af5a",
@@ -117,7 +119,7 @@ const VASModal = ({ serviceName, categoryName, onClose }) => {
     if (!form.service_name)                  return setMsg("Please select a service");
     setStatus("loading"); setMsg("");
     try {
-      const res  = await fetch("/api/vas_enquiry", {
+      const res  = await fetch(`${API_BASE}/vas_enquiry.php`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -126,8 +128,8 @@ const VASModal = ({ serviceName, categoryName, onClose }) => {
         }),
       });
       const data = await res.json();
-      if (data.success) { setStatus("success"); setMsg(data.message); }
-      else              { setStatus("error");   setMsg(data.error || "Something went wrong."); }
+      if (data.status === "success") { setStatus("success"); setMsg(data.message); }
+      else                           { setStatus("error");   setMsg(data.message || "Something went wrong."); }
     } catch {
       setStatus("error"); setMsg("Network error. Please try again.");
     }

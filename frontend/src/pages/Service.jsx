@@ -9,7 +9,7 @@ const BRAND = {
 };
 
 // ─── API CONFIG ───────────────────────────────────────────────────
-const API_URL = "https://yourdomain.com/backend/api/service_booking.php";
+const API_URL = `${import.meta.env.VITE_API_URL || "/backend/api"}/service_booking.php`;
 
 // ─── API HELPERS ──────────────────────────────────────────────────
 async function submitAppointment(payload) {

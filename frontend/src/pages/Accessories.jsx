@@ -12,7 +12,7 @@ const BRAND = {
 };
 
 // ─── API URL ───────────────────────────────────────────────────────
-const API_URL = "https://yourdomain.com/backend/api/accessories_enquiry.php";
+const API_URL = `${import.meta.env.VITE_API_URL || "/backend/api"}/accessories_enquiry.php`;
 
 // ─── PAGE STYLES ─────────────────────────────────────────────────
 const PageStyles = () => (

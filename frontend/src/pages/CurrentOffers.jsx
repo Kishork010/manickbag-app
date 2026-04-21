@@ -10,7 +10,7 @@ const BRAND = {
 };
 
 // ─── API URL ──────────────────────────────────────────────────────
-const API_URL = "https://yourdomain.com/backend/api/offers_enquiry.php";
+const API_URL = `${import.meta.env.VITE_API_URL || "/backend/api"}/offers_enquiry.php`;
 const WHATSAPP_NUMBER = "919686024365"; // 91 prefix for India
 
 const PageStyles = () => (

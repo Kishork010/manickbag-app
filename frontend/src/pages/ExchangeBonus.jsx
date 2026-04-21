@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
+const API_BASE = import.meta.env.VITE_API_URL || "/backend/api";
+
 const BRAND = {
   navy: "#0a1628", navyMid: "#0c1f3f", navyLight: "#1a3d7c",
   gold: "#b8963e", goldLight: "#d4af5a", goldPale: "#f0e4c2",
@@ -147,7 +149,7 @@ export default function ExchangeBonus() {
     setErrorMsg("");
 
     try {
-      const res  = await fetch("/api/exchange_enquiry", {
+      const res  = await fetch(`${API_BASE}/exchange_enquiry.php`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -163,12 +165,12 @@ export default function ExchangeBonus() {
       });
       const data = await res.json();
 
-      if (data.success) {
+      if (data.status === "success") {
         setSubmitted(true);
         setSubmitStatus("idle");
       } else {
         setSubmitStatus("error");
-        setErrorMsg(data.error || "Something went wrong. Please try again.");
+        setErrorMsg(data.message || "Something went wrong. Please try again.");
       }
     } catch {
       setSubmitStatus("error");
